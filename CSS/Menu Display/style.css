@@ -1,0 +1,58 @@
+/* zera as conf da pag*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: rgb(178, 230, 230);
+    margin: 50px;
+    padding: 30px;
+}
+
+ul li{
+    /*tira as bolinhas*/
+    list-style: none;
+    display: inline;
+    padding: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(27, 27, 115);
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgba(93, 10, 10, 0.704);
+    text-decoration: overline;
+    padding: 12px;
+    transition: 5ms;
+    
+}
+
+section{
+    margin: 50px;
+}
+
+h2{
+    background-color: rgb(178, 230, 230);
+}
+
+
+#font-type{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer{
+    margin: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
