@@ -8,7 +8,7 @@
 
 
 header{
-    background-color: rgb(178, 230, 230);
+    background-color: rgb(0, 0, 0);
     margin: 50px;
     padding: 30px;
 }
@@ -22,13 +22,13 @@ ul li{
 
 a{
     text-decoration: none;
-    color: rgb(27, 27, 115);
+    color: rgb(255, 255, 255);
     font-size: 18pt;
     font-weight: bold;
 }
 
 a:hover{
-    color: rgba(93, 10, 10, 0.704);
+    color: rgba(0, 0, 0, 0.704);
     text-decoration: overline;
     padding: 12px;
     transition: 5ms;
@@ -40,7 +40,9 @@ section{
 }
 
 h2{
-    background-color: rgb(178, 230, 230);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
 }
 
 
