@@ -1,0 +1,39 @@
+
+header{
+    display: flex;
+    border: #000 solid 1px;
+    justify-content:center ;
+    background-color: #000;
+
+}
+
+h1{
+    color: white;
+}
+
+
+.main{
+    display: flex;
+    
+
+
+}
+
+.principal{
+    justify-content: center;
+    border: #000 solid 1px;
+    margin: 10px;
+    height: 500px;
+    width: 922px;
+}
+
+
+.sidebar{
+    margin-top: 10px;
+    border: #000 solid 1px;
+    height: 500px;
+    width: 160px;
+
+}
+
+
