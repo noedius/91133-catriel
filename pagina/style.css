@@ -1,0 +1,137 @@
+/* Estilos globais para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que o padding e border sejam incluídos no tamanho total dos elementos */
+
+}
+
+/* Estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define uma fonte simples e legível */
+    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto escuro */
+}
+
+/* Cabeçalho (header) da página */
+header {
+    background-color: #757575; /* Cor de fundo cinza escuro */
+    color: white; /* Cor do texto branca */
+    padding: 20px; /* Espaçamento interno de 20px */
+    text-align: center; /* Centraliza o conteúdo */
+   
+}
+
+/* Estilos para a barra de navegação */
+header nav {
+    margin-top: 10px; /* Espaço entre o logo e os links */
+    
+}
+
+/* Links de navegação */
+header nav a {
+    color: white; /* Cor dos links branca */
+    margin: 0 10px; /* Espaçamento lateral de 10px entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+   
+}
+
+/* Seção de destaque principal (hero) */
+.hero {
+    background-color: #e0e0e0; /* Cor de fundo cinza claro */
+    padding: 100px 20px; /* Espaçamento interno grande, com foco em cima e embaixo */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos do título principal (h1) na seção hero */
+.hero h1 {
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+    margin-bottom: 10px; /* Adiciona um espaçamento abaixo do título */
+}
+
+/* Parágrafo (p) dentro da seção hero */
+.hero p {
+    font-size: 1.2em; /* Aumenta o tamanho do texto */
+}
+
+/* Seção de conteúdo */
+.content {
+    text-align: center; /* Centraliza todo o conteúdo */
+    padding: 50px 20px; /* Espaçamento interno */
+}
+
+/* Título secundário dentro da seção de conteúdo */
+.content h2 {
+    margin-bottom: 20px; /* Espaçamento inferior para separar o título do restante */
+    font-size: 1.5em; /* Tamanho maior que o padrão */
+}
+
+
+/* Linha de caixas dentro da seção de conteúdo */
+.content .row {
+    display: flex; /* Define um layout flexível */
+    justify-content: center; /* Alinha os elementos ao centro */
+    gap: 10px; /* Espaçamento entre as caixas */
+    flex-wrap: wrap; /* Permite que as caixas "quebrem" para a linha de baixo em telas menores */
+}
+
+/* Estilos das caixas individuais */
+.content .box {
+    background-color: #d0d0d0; /* Fundo cinza claro */
+    width: 30%; /* Ocupa 30% da largura do contêiner */
+    height: 150px; /* Altura fixa de 150px */
+}
+
+/* Seção de destaque */
+.featured {
+    background-color: #a0a0a0; /* Cor de fundo cinza */
+    padding: 50px 20px; /* Espaçamento interno */
+}
+
+/* Estilos para as caixas de destaque */
+.featured .row {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza as caixas */
+    gap: 10px; /* Espaçamento entre as caixas */
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+/* Estilos das caixas de destaque */
+.featured .box {
+    background-color: #c0c0c0; /* Fundo cinza médio */
+    width: 30%; /* Ocupa 30% da largura */
+    height: 150px; /* Altura fixa */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Seção com caixas adicionais */
+.boxes {
+    padding: 50px 20px; /* Espaçamento interno */
+    display: flex; /* Layout flexível */
+    justify-content: space-around; /* Espaça uniformemente as caixas */
+}
+
+/* Estilos para as caixas dentro da seção de boxes */
+.boxes .box {
+    background-color: #e0e0e0; /* Fundo cinza claro */
+    width: 30%; /* Ocupa 30% da largura */
+    height: 200px; /* Altura fixa maior que as outras caixas */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Rodapé */
+footer {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #757575; /* Fundo cinza escuro */
+    color: white; /* Texto branco */
+}
+
+/* Responsividade para telas menores que 768px */
+@media(max-width: 768px) {
+    .content .box, .featured .box, .boxes .box {
+        width: 80%; /* Altera a largura das caixas para 80% em telas pequenas */
+    }
+}
