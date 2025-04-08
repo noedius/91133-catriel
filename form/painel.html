@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bem Vindo ao painel</h1>
+    <p id="userWelcome">Carregando...</p>
+
+    <button id="logoutBtn">Sair</button>
+
+    <script>
+        const username = localStorage.getItem('username');
+        if (username){
+            document.getElementById("userWelcome").
+            textContent = `Bem vindo, ${username}!`;
+        }else{
+            document.getElementById("userWelcome").
+            textContent = "Nome de Usuario não encontrado";
+        }
+
+    document.getElementById("logoutBtn").addEventListener("click", function(){
+
+    localStorage.removeItem("username");
+    window.location.href = "index.html";
+})
+    </script>
+</body>
+</html>
