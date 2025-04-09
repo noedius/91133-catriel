@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao Sistema</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Acessar Sistema de Cadastro</h1>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <button type="submit" class="login-button">Entrar</button>
+        </form>
+
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if(username && password) {
+
+                window.location.href = 'cadprod.html';
+            } else {
+                alert('Por favor, preencha todos os campos!');
+            }
+        });
+    </script>
+</body>
+</html>

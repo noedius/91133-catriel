@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema CadProd - 1.0</h1>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome do Produto</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div class="grid-container">
+                <div class="form-group">
+                    <label for="preco">Preço (R$)</label>
+                    <input type="number" id="preco" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" required>
+                </div>
+            </div>
+
+            <div class="total-section">
+                Valor Total: R$ <span id="valorTotal">0.00</span>
+            </div>
+
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+    </div>
+
+    <script>
+        const precoInput = document.getElementById('preco');
+        const quantidadeInput = document.getElementById('quantidade');
+        const valorTotalSpan = document.getElementById('valorTotal');
+
+        function calcularTotal() {
+            const preco = parseFloat(precoInput.value) || 0;
+            const quantidade = parseInt(quantidadeInput.value) || 0;
+            const total = preco * quantidade;
+            valorTotalSpan.textContent = total.toFixed(2);
+        }
+
+        precoInput.addEventListener('input', calcularTotal);
+        quantidadeInput.addEventListener('input', calcularTotal);
+    </script>
+</body>
+</html>
