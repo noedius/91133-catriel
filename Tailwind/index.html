@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMSCARED - A Pixelated Nightmare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        .pixel-font {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+   
+    <nav class="bg-gray-800 fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-white pixel-font text-sm">IMSCARED</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="sobre.html" class="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Sobre</a>
+                        <a href="features.html" class="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Features</a>
+                        <a href="https://store.steampowered.com/app/429720/IMSCARED/?l=portuguese" class="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative h-screen">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lt8.jpg" 
+                 class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900"></div>
+        </div>
+        
+        <div class="relative h-full flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-6xl md:text-8xl text-white pixel-font mb-8">
+                    IMSCARED
+                </h1>
+                <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+                  Uma experiência de survival horror que quebra a quarta parede. Explore um mundo misterioso onde a realidade e a ficção se encontram.
+
+                </p>
+                <button class="bg-red-600 hover:bg-red-700 text-white pixel-font px-8 py-4 text-sm uppercase tracking-wide transition duration-300">
+                  <a href="https://store.steampowered.com/app/429720/IMSCARED/?l=portuguese">Compre agora</a>
+                  </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl text-white pixel-font text-center mb-12">Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">👻</div>
+                    <h3 class="text-white pixel-font text-xl mb-4">Terror Psicológico</h3>
+                    <p class="text-gray-300">Experimente o verdadeiro medo com mecânicas alucinantes e sustos inesperados.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">🎮</div>
+                    <h3 class="text-white pixel-font text-xl mb-4">Jogabilidade única</h3>
+                    <p class="text-gray-300">Interaja com o jogo de maneiras que você nunca imaginou ser possível.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">💾</div>
+                    <h3 class="text-white pixel-font text-xl mb-4">Estética retrô</h3>
+                    <p class="text-gray-300">Gráficos de pixel art combinados com efeitos de iluminação modernos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl text-white pixel-font mb-8">Venha me Encontrar</h2>
+            <div class="space-y-4">
+                <button class="bg-red-600 hover:bg-red-700 text-white pixel-font px-8 py-4 text-sm uppercase tracking-wide transition duration-300">
+                    Download para Windows
+                </button>
+              </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2025 IMSCARED. All rights reserved. Created by Ivan Zanotti.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
