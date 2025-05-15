@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Listagem de Produtos</h2>
+<button id="atualizarLista" class="btn btn-secondary mb-3">Atualizar Lista</button>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+        </tr>
+    </thead>
+    <tbody id="tabelaProdutos">
+        
+    </tbody>
+</table>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        carregarProdutos();
+        
+        document.getElementById('atualizarLista').addEventListener('click', function() {
+            carregarProdutos();
+        });
+    });
+</script>
+{% endblock %}
